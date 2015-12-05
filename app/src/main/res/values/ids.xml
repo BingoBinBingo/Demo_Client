@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="frag1" >false</item>
+    <item type="id" name="selectedBtn" >false</item>
+    <item type="id" name="popupWindowBtn" >false</item>
+    <item type="id" name="createDialogbtn" >false</item>
+</resources>
