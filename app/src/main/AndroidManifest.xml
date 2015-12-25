@@ -2,10 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bingo.demo_client" >
 
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <application
-        android:name=".activity.DemoApplication"
+        android:name=".application.DemoApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon_lan_jie"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
@@ -51,9 +52,78 @@
             android:authorities="com.bingo.demo_client.myProvider" />
 
         <activity
-            android:name=".activity.DemoApplication"
+            android:name=".application.DemoApplication"
             android:label="@string/title_activity_demo_application" >
         </activity>
+
+        <activity android:name=".activity.AdapterActivity" >
+            <intent-filter>
+                <action android:name="com.bingo.demo.adapterActivity_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.PercentLayoutActivity">
+            <intent-filter>
+                <action android:name="com.bingo.demo.percentLayoutActivity_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.bingo.wechat2.ui.activity.MainActivity">
+            <intent-filter>
+                <action android:name="com.bingo.wechat2.mainActivity_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.PreferenceMainActivity">
+            <intent-filter>
+                <action android:name="com.bingo.demo.preferenceMainActivity_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.FlightPreferenceActivity">
+            <intent-filter>
+                <action android:name="com.bingo.demo.flightPreferenceActivity_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.ConvertParamActivity">
+            <intent-filter>
+                <action android:name="com.bingo.demo.convertParamActivity_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.AudioActivity">
+            <intent-filter>
+                <action android:name="com.bingo.demo.audioActivity_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.AnimationActivity">
+            <intent-filter>
+                <action android:name="com.bingo.demo.animationActivity_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ScrollViewActivity">
+            <intent-filter>
+                <action android:name="com.bingo.demo.scrollViewActivity_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".viewpager.MainViewPager">
+            <intent-filter>
+                <action android:name="com.bingo.demo.mainViewPager_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

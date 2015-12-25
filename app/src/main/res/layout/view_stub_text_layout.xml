@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/viewStub_text"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#77ff00ff"
+        android:text="我是viewstub文字"
+        />

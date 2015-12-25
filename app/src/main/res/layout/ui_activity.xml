@@ -1,38 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<com.bingo.percentsamples.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.bingo.percentsamples.PercentLinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            >
+        <include layout="@layout/foot_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="Click Me!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-    <TextView
-        android:text="不同状态的按钮背景－事例"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorRed"/>
-    <Button
-        android:text="seletedBtn"
-        android:id="@id/selectedBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/selected_btn"/>
-    <TextView
-        android:text="popupWindow－事例"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorRed"/>
-    <Button
-        android:id="@id/popupWindowBtn"
-        android:text="popupWindowBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:id="@+id/alterText"
-        android:text="alertDilog－事例"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorRed"/>
-    <Button
-        android:id="@id/createDialogbtn"
-        android:text="弹出对话框"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-</LinearLayout>
+            <EditText
+                app:layout_heightPercent="20%"
+                android:id="@+id/myEdit1"
+                android:hint="dsds"
+                app:layout_widthPercent="80%"
+                app:layout_marginLeftPercent="5%"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/edit_text_color_selector"
+                />
+            <EditText
+                app:layout_heightPercent="20%"
+                android:id="@+id/myEdit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/edit_text_color_selector"
+                android:background="@drawable/edit_text_shape_drawable"
+                />
+            <ImageView
+                app:layout_widthPercent="90%"
+                app:layout_heightPercent="30%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/layout_list"/>
+            <TextView
+                android:text="不同状态的按钮背景－事例"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorRed"/>
+            <Button
+                android:text="seletedBtn"
+                android:id="@id/selectedBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selected_btn"/>
+            <TextView
+                android:text="popupWindow－事例"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorRed"/>
+            <Button
+                android:id="@id/popupWindowBtn"
+                android:text="popupWindowBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/alterText"
+                android:text="alertDilog－事例"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorRed"/>
+            <Button
+                android:id="@id/createDialogbtn"
+                android:text="弹出对话框"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/alterText"
+                android:text="imageView的src和backgroud的测试"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorRed"/>
+            <ImageView
+                android:id="@+id/alphImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="5"
+                android:src="@drawable/man_photo"/>
+                <TextView
+                    android:id="@+id/alignBaseTv"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="30%"
+                    android:text="左边的文本"
+                    android:background="#f00"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/alignBaseTv"
+                    app:layout_marginTopPercent="4%"
+                    app:layout_widthPercent="30%"
+                    android:layout_toRightOf="@id/alignBaseTv"
+                    android:text="右边的文本"
+                    android:background="#00ff00"
+                    android:id="@+id/rightTv"
+                    />
+
+            <TextView
+                android:text="ViewStub的使用场景"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorRed"/>
+            <ViewStub
+                android:id="@+id/viewstub_demo_text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout="@layout/view_stub_text_layout"
+                />
+            <ViewStub
+                android:id="@+id/viewstub_demo_image"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:layout="@layout/view_stub_image_layout"
+                />
+        </com.bingo.percentsamples.PercentLinearLayout>
+    </ScrollView>
+</com.bingo.percentsamples.PercentLinearLayout>

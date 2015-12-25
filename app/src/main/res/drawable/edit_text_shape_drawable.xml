@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    >
+    <!-- 4个角的弧度-->
+    <corners
+        android:radius="18dip"
+        />
+    <!-- 渐变颜色-->
+    <gradient
+        android:startColor="#ff0"
+        android:endColor="#0ff"
+        android:type="sweep"
+        android:angle="45"
+        />
+    <!-- 单种颜色进行填充-->
+    <solid
+        />
+    <!-- 绘制边框-->
+    <stroke
+        android:width="3dip"
+        android:color="#00f"
+        />
+    <!-- 定义几何图形的内边距-->
+    <padding
+        android:top="30dp"
+        android:left="60dp"
+        android:right="60dp"
+        android:bottom="30dp"
+        />
+    <!-- 定义几何图形的大小-->
+    <size
+        />
+</shape>

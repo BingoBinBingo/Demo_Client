@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bingo.percentsamples.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.bingo.percentsamples.PercentLinearLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="50%"
+        android:background="#ffee11"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="菜单"/>
+    </com.bingo.percentsamples.PercentLinearLayout>
+
+    <com.bingo.percentsamples.PercentLinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/content_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="50%"
+        >
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="90%"
+        app:layout_widthPercent="100%"
+        android:background="@color/colorPrimary"
+        />
+
+    <RadioGroup
+        android:id="@+id/bottomBtnCon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="100%"
+        android:orientation="horizontal"
+        android:background="#ff00ff"
+        >
+        <RadioButton
+            android:id="@+id/ball_kill"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:text="球技"
+            android:background="@drawable/tab_selector"
+            android:textColor="@drawable/tab_select_tv_color"
+            />
+
+        <RadioButton
+            android:id="@+id/ball_requirement"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:text="球品"
+            android:background="@drawable/tab_selector"
+            android:textColor="@drawable/tab_select_tv_color"
+            />
+
+        <RadioButton
+            android:id="@+id/ball_friend"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:text="球友"
+            android:background="@drawable/tab_selector"
+            android:textColor="@drawable/tab_select_tv_color"
+            />
+
+        <RadioButton
+            android:id="@+id/me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:text="我"
+            android:background="@drawable/tab_selector"
+            android:textColor="@drawable/tab_select_tv_color"
+            />
+    </RadioGroup>
+    </com.bingo.percentsamples.PercentLinearLayout>
+</com.bingo.percentsamples.PercentLinearLayout>

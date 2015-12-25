@@ -1,0 +1,9 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/foot_textView"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:gravity="center_horizontal|center_vertical"
+    android:text="我是页脚"
+    android:background="#66ff0000"
+    />

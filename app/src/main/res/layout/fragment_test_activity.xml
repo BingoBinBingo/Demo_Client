@@ -26,7 +26,53 @@
             android:text="addFragment2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn3"
+            android:text="getFramengCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getFramengCount"/>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/removeFragment1"
+            android:text="removeFragment1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="removeFragment1"/>
+        <Button
+            android:id="@+id/removeFragment2"
+            android:text="removeFragment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="removeFragment2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/popBackStack"
+            android:text="popBackStack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="popBackStack"/>
+        <Button
+            android:id="@+id/popBackStackToFrag2_0"
+            android:text="popBackStackToFrag2_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="popBackStackToFrag2_0"/>
+        <Button
+            android:id="@+id/popBackStackToFrag2_Inclusive"
+            android:text="popBackStackToFrag2_Inclusive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="popBackStackToFrag2_Inclusive"/>
+    </LinearLayout>
+
 
     <FrameLayout
         android:id="@+id/frameLayoutContainer"
@@ -34,10 +80,6 @@
         android:layout_height="match_parent"
         android:background="#00ff00"
         >
-        <fragment
-            android:id="@+id/fragmentContainer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
     </FrameLayout>
 
 </LinearLayout>
