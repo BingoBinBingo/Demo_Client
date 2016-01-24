@@ -27,3 +27,8 @@ dependencies {
     compile 'com.google.code.gson:gson:2.5'
     compile project(':xoa-config-release')
 }
+android {
+      lintOptions {
+          abortOnError false
+      }
+  }
