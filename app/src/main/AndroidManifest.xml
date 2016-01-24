@@ -3,6 +3,9 @@
     package="com.example.bingo.demo_client" >
 
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
     <application
         android:name=".application.DemoApplication"
         android:allowBackup="true"
@@ -120,6 +123,33 @@
         <activity android:name=".viewpager.MainViewPager">
             <intent-filter>
                 <action android:name="com.bingo.demo.mainViewPager_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.RingtoneActivity" android:label="黄彬">
+            <intent-filter>
+                <action android:name="com.bingo.demo.ringtoneActivity_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ReadWriteActivity" android:label="黄彬">
+            <intent-filter>
+                <action android:name="com.bingo.demo.readWriteActivity_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.GestureActivity">
+            <intent-filter>
+                <action android:name="com.bingo.demo.gestureActivity_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.AudioAndVideoActivity">
+            <intent-filter>
+                <action android:name="com.bingo.demo.audioAndVideoActivity_action"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>

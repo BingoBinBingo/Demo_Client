@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Demo_Client.iml" filepath="$PROJECT_DIR$/Demo_Client.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xoa-config-release/xoa-config-release.iml" filepath="$PROJECT_DIR$/xoa-config-release/xoa-config-release.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffee11"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="菜单"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/contentContainerBg"
+        />
+
+    <RadioGroup
+        android:id="@+id/bottomBtnCon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray"
+        >
+        <RadioButton
+            android:id="@+id/ball_kill_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:text="球技"
+            android:background="@drawable/tab_selector"
+            android:textColor="@drawable/tab_select_tv_color"
+            />
+
+        <RadioButton
+            android:id="@+id/ball_requirement_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:text="球品"
+            android:background="@drawable/tab_selector"
+            android:textColor="@drawable/tab_select_tv_color"
+            />
+
+        <RadioButton
+            android:id="@+id/ball_friend_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:text="球友"
+            android:background="@drawable/tab_selector"
+            android:textColor="@drawable/tab_select_tv_color"
+            />
+
+        <RadioButton
+            android:id="@+id/ball_me_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:text="我"
+            android:background="@drawable/tab_selector"
+            android:textColor="@drawable/tab_select_tv_color"
+            />
+    </RadioGroup>
+    </LinearLayout>
+</LinearLayout>
