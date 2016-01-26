@@ -34,7 +34,7 @@ public class GestureActivity extends FragmentActivity {
 
         @Override
         public boolean onDown(MotionEvent motionEvent) {
-            ToastThread.showMsg("onDown");
+            ToastThread.showMsg("onDown1122");
             return false;
         }
 
