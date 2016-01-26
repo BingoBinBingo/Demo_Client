@@ -52,7 +52,7 @@ public class AudioAndVideoActivity extends FragmentActivity implements View.OnCl
 
     private void doGsonTest() {
         Gson gson = new Gson();
-        MyEntry myEntry = new MyEntry(24, "huangbin");
+        MyEntry myEntry = new MyEntry(24, "huangbin11");
         String jsonStr = gson.toJson(myEntry);
         ToastThread.showMsg(jsonStr);
 
