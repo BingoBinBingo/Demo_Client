@@ -107,7 +107,7 @@ public class Song {
 
     @Override
     public String toString() {
-        return "Song [fileName=" + fileName + ", title=" + title
+        return "Song [fileName=" + fileName + ", nextLevelTitle=" + title
                 + ", duration=" + duration + ", singer=" + singer + ", album="
                 + album + ", year=" + year + ", type=" + type + ", size="
                 + size + ", fileUrl=" + fileUrl + "]";

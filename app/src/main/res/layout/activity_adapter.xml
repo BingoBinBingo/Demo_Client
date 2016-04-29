@@ -5,16 +5,26 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.example.bingo.demo_client.activity.AdapterActivity">
     <TextView
         android:background="@color/colorRed"
-        android:text="测试--adapter.notifyDataChange"
+        android:text="测试--adapter.notifyDataChange,数据是系统属性"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+
+    <Button
+        android:id="@+id/modifyData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="改变数据"
+        android:onClick="changeListData"
+        />
     <ListView
         android:id="@+id/testedtList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
 
 </LinearLayout>

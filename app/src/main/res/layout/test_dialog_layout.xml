@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/showDialog"
+        android:text="显示对话框"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showDialog"
+        />
+    <Button
+        android:id="@+id/showDialog2"
+        android:text="显示对话框2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showSecondDialog"
+        />
+
+    <Button
+        android:id="@+id/showprogressDialog"
+        android:text="显示进度条对话框"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showProgressDialog"
+        />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/dialog_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是title1"
+        />
+    <TextView
+        android:id="@+id/dialog_title2"
+        android:text="我是title2"
+        android:layout_toRightOf="@+id/dialog_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/titleBtn"
+        android:text="我是titleBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_title1"
+        />
+
+
+</RelativeLayout>

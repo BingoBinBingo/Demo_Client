@@ -17,4 +17,13 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="edit_title_name">
+    </style>
+
+    <!-- svp3300 -->
+    <style name="lightTitleSpinnerStyle" parent="@style/Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:divider">#50000000</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
 </resources>

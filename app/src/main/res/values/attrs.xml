@@ -1,4 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <declare-styleable name="customStyle">
+        <attr name="titleText" format="string" />
+        <attr name="titleColor" format="color" />
+        <attr name="titleSize" format="dimension" />
+    </declare-styleable>
+
+
+    <!-- IPInfoView -->
+    <declare-styleable name="ipInfoViewStyle">
+        <attr name="infoName" format="string" />
+    </declare-styleable>
+
+    <!-- TitleSpinner -->
+    <declare-styleable name="titleSpinnerStyle">
+        <attr name="spinnerTitle" format="string" />
+        <attr name="spinnerValue" format="string" />
+
+        <attr name="titleTvVisibility">
+            <enum name="visible" value="0"/>
+            <enum name="gone" value="1"/>
+        </attr>
+
+        <attr name="valueTvPosition" format="enum">
+            <enum name="centerInParent" value="0"/>
+            <enum name="alignParentLeft" value="1"/>
+            <enum name="alignParentRight" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- TitleNextLevelView -->
+    <declare-styleable name="titleNextLevelViewStyle">
+        <attr name="nextLevelTitle" format="string" />
+        <attr name="nextLevelValue" format="string" />
+
+        <attr name="valueTvVisibility">
+            <enum name="visible" value="0"/>
+            <enum name="gone" value="1"/>
+        </attr>
+    </declare-styleable>
+
 </resources>

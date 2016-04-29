@@ -1,8 +1,35 @@
 apply plugin: 'com.android.application'
 
+//task clearApk(type: Delete) {
+//    delete '../release/' + POM_ARTIFACT_ID + '_' + VERSION_NAME + '.apk'
+//}
+//
+//task makeApk(type: Copy) {
+//    from('build/outputs/apk/')
+//    into('../release/')
+//    include('app-debug.apk')
+//    rename('app-debug.apk', POM_ARTIFACT_ID + '_' + VERSION_NAME + '.apk')
+//}
+//makeApk.dependsOn(clearApk, build)
+
 android {
     compileSdkVersion 22
     buildToolsVersion '21.1.2'
+
+    signingConfigs {
+        release {
+            keyAlias 'demo_client'
+            keyPassword 'demo_client'
+            storeFile file('sign/Demo_Client.keystore')
+            storePassword 'demo_client'
+        }
+        debug {
+            keyAlias 'demo_client'
+            keyPassword 'demo_client'
+            storeFile file('sign/Demo_Client.keystore')
+            storePassword 'demo_client'
+        }
+    }
 
     defaultConfig {
         applicationId "com.example.bingo.demo_client"
@@ -21,9 +48,12 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:percent:22.2.0'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.google.code.gson:gson:2.5'
     compile project(':xoa-config-release')
+    compile 'com.android.support:percent:22.2.0'
+    compile 'com.google.code.gson:gson:2.5'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'com.zhy:percent-support-extends:1.1.1'
 }

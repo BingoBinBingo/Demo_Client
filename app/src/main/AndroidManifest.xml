@@ -1,40 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.bingo.demo_client" >
+    package="com.example.bingo.demo_client">
 
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".application.DemoApplication"
         android:allowBackup="true"
         android:icon="@mipmap/icon_lan_jie"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name=".listView.MyListView" >
+        android:theme="@style/AppTheme">
+        <activity android:name=".listView.MyListView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" >
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="com.bingo.demo.mainActivity_action" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.FragmentTestActivity" >
+        <activity android:name=".activity.FragmentTestActivity">
             <intent-filter>
                 <action android:name="com.bingo.demo.fragmentTestActivity_action" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.UIActivity" >
+        <activity android:name=".activity.UIActivity">
             <intent-filter>
                 <action android:name="com.bingo.demo.UIActivity_action" />
 
@@ -42,7 +48,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".receiver.BootBroadcastReceiver" >
+        <receiver android:name=".receiver.BootBroadcastReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
 
@@ -56,104 +62,186 @@
 
         <activity
             android:name=".application.DemoApplication"
-            android:label="@string/title_activity_demo_application" >
-        </activity>
-
-        <activity android:name=".activity.AdapterActivity" >
+            android:label="@string/title_activity_demo_application" />
+        <activity android:name=".activity.AdapterActivity">
             <intent-filter>
-                <action android:name="com.bingo.demo.adapterActivity_action"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.bingo.demo.adapterActivity_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".activity.PercentLayoutActivity">
             <intent-filter>
-                <action android:name="com.bingo.demo.percentLayoutActivity_action"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.bingo.demo.percentLayoutActivity_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name="com.bingo.wechat2.ui.activity.MainActivity">
             <intent-filter>
-                <action android:name="com.bingo.wechat2.mainActivity_action"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.bingo.wechat2.mainActivity_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".activity.PreferenceMainActivity">
             <intent-filter>
-                <action android:name="com.bingo.demo.preferenceMainActivity_action"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.bingo.demo.preferenceMainActivity_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".activity.FlightPreferenceActivity">
             <intent-filter>
-                <action android:name="com.bingo.demo.flightPreferenceActivity_action"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.bingo.demo.flightPreferenceActivity_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".activity.ConvertParamActivity">
             <intent-filter>
-                <action android:name="com.bingo.demo.convertParamActivity_action"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.bingo.demo.convertParamActivity_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".activity.AudioActivity">
             <intent-filter>
-                <action android:name="com.bingo.demo.audioActivity_action"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.bingo.demo.audioActivity_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".activity.AnimationActivity">
             <intent-filter>
-                <action android:name="com.bingo.demo.animationActivity_action"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.bingo.demo.animationActivity_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".activity.ScrollViewActivity">
             <intent-filter>
-                <action android:name="com.bingo.demo.scrollViewActivity_action"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.bingo.demo.scrollViewActivity_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".viewpager.MainViewPager">
             <intent-filter>
-                <action android:name="com.bingo.demo.mainViewPager_action"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
+                <action android:name="com.bingo.demo.mainViewPager_action" />
 
-        <activity android:name=".activity.RingtoneActivity" android:label="黄彬">
-            <intent-filter>
-                <action android:name="com.bingo.demo.ringtoneActivity_action"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.ReadWriteActivity" android:label="黄彬">
+        <activity
+            android:name=".activity.RingtoneActivity"
+            android:label="黄彬">
             <intent-filter>
-                <action android:name="com.bingo.demo.readWriteActivity_action"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
+                <action android:name="com.bingo.demo.ringtoneActivity_action" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ReadWriteActivity"
+            android:label="黄彬">
+            <intent-filter>
+                <action android:name="com.bingo.demo.readWriteActivity_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".activity.GestureActivity">
             <intent-filter>
-                <action android:name="com.bingo.demo.gestureActivity_action"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.bingo.demo.gestureActivity_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".activity.AudioAndVideoActivity">
             <intent-filter>
-                <action android:name="com.bingo.demo.audioAndVideoActivity_action"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.bingo.demo.audioAndVideoActivity_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.AsyncTaskActivity">
+            <intent-filter>
+                <action android:name="com.bingo.demo.asyncTaskActivity_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.NetworkActivity">
+            <intent-filter>
+                <action android:name="com.bingo.demo.networkActivity_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.WigetActivity">
+            <intent-filter>
+                <action android:name="com.bingo.demo.wigetActivity_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.CustomViewActivity">
+            <intent-filter>
+                <action android:name="com.bingo.demo.customViewActivity_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.NetworkEncodeActivity">
+            <intent-filter>
+                <action android:name="com.bingo.demo.networkEncodeActivity_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.TestFragmentManager">
+            <intent-filter>
+                <action android:name="com.bingo.demo.testFragmentManager_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.TestDialogFragment">
+            <intent-filter>
+                <action android:name="com.bingo.demo.testDialogFragment_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".activity.CustomizedWidgetActivity">
+            <intent-filter>
+                <action android:name="com.bingo.demo.customizedWidgetActivity_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.ListItemActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            >
+            <intent-filter>
+                <action android:name="com.bingo.demo.listItemActivity_action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.ContentActivity"></activity>
     </application>
 
 </manifest>

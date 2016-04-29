@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/addItemFrag" android:title="AddFrag"/>
+    <item android:id="@+id/removeItemFrag" android:title="RemoveFrag"/>
+    <item android:id="@+id/settingsItemFrag" android:title="SettingFrag"/>
+</menu>

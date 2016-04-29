@@ -34,4 +34,11 @@
 
     </string-array>
 
+    <string-array name="textSizeArr">
+
+        <item>大</item>
+        <item>中</item>
+        <item>小</item>
+    </string-array>
+
 </resources>

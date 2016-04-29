@@ -5,6 +5,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
@@ -12,6 +13,7 @@ import android.os.Looper;
 import android.os.Message;
 import android.os.RemoteException;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,6 +22,8 @@ import com.example.bingo.demo_server.aidl_model.Apple;
 import com.example.bingo.demo_server.aidl_model.Fruit;
 import com.example.bingo.demo_server.aidl_model.IPerson;
 import com.example.bingo.demo_server.aidl_model.IPersonCallback;
+
+
 
 
 public class MainActivity extends Activity {
@@ -35,6 +39,9 @@ public class MainActivity extends Activity {
     private Button queryApple;
     private AIDLServiceConnection conn = new AIDLServiceConnection();
     private IPerson person;
+    Paint paint = new Paint();
+
+
     private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -53,7 +60,6 @@ public class MainActivity extends Activity {
 
         //初始化
         queryBtn = (Button) findViewById(R.id.queryBtn);
-
         queryResultText = (EditText) findViewById(R.id.queryResultText);
         queryResultText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
@@ -82,6 +88,16 @@ public class MainActivity extends Activity {
         intent.setAction("com.example.bingo.demo_server.AIDLService");
         bindService(intent, conn, Context.BIND_AUTO_CREATE);
 
+    }
+
+    private void initController() {
+        this.queryFruitBtn.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+
+                return false;
+            }
+        });
     }
 
     class MyOnClickListener implements View.OnClickListener {
